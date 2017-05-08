@@ -1,0 +1,21 @@
+{
+  "require": {
+	"noahbuscher/macaw": "dev-master",
+	"illuminate/database": "*",
+    "filp/whoops": "*",
+    "smarty/smarty": "~3.1",
+	"sebastiansulinski/blade" : "dev-master",
+	"jenssegers/blade":"dev-master",
+    "illuminate/events": "^5.4",
+    "duncan3dc/sessions":"dev-master",
+  },
+
+
+  "autoload": {
+    "classmap" :[
+		"App/Models",
+		"App/Controllers",
+		"Services"
+	]
+  }
+}
