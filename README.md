@@ -25,11 +25,17 @@
    视图
    
    视图层的灵感来自Laravel的Blade模板
+   
+   
    你可以这样在控制器通过View传送数据到模板
 
    return View('welcome',['data'=>'Lov-Views']);
+   
+   
 
    blade模板引擎也与Laravel一样,你可以这样取得数据
+   
+   
    {{ $data }}
    
    
@@ -42,6 +48,8 @@
    {
       return View('welcome');
    });
+   
+   
    Route::get('/test','index@index');
    
 
