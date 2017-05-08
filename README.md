@@ -46,7 +46,7 @@
    
 
 
-#[我的博客](http://www.lov3ling.com)  
+#[By Lov3](http://www.lov3ling.com)  
 
 
 
