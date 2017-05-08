@@ -13,10 +13,12 @@
 * Route
 
 
-   Composer update安装依赖
-  
-   数据库
-
+   Composer update
+   
+   Composer dumpautoload
+   
+   模型
+  
    模型层采用Laravel的Eloquent模型,你可以参照Laravel的Eloquent模型取的数据库的数据
 
     $data=contents::all();
