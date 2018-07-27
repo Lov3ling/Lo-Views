@@ -1,7 +1,7 @@
 ## Install
 
 ```
-https://github.com/Lov3ling/Lo-Views.git
+git clone https://github.com/Lov3ling/Lo-Views.git
 
 composer update
 
