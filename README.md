@@ -1,3 +1,5 @@
+**学习MVC时利用Composer自己组建的MVC框架**
+
 ## Install
 
 ```
