@@ -1,62 +1,45 @@
-# Lo-Views
--*-By:Lov3  
--*-Date:2017-05-08
-==============================================
-   利用Composer写的一个微框架
-   有点仿照Laravel,
+## Install
 
-   完成的部分
-* Model 
-* Controller 
-* View 
-* Session 
-* Route
+```
+https://github.com/Lov3ling/Lo-Views.git
 
+composer update
 
-   Composer update
-   
-   Composer dumpautoload
+composer dumpautoload
+```
 
-      模型
+## Usage
 
-      模型层采用Laravel的Eloquent模型,你可以参照Laravel的Eloquent模型取的数据库的数据
+### Route
 
-       $data=contents::all();
+路由支持闭包模式和控制器行为
+```php
+Route::get('/',function()
+{
+   return View('welcome');
+});
 
+Route::get('/test','index@index');
+```
 
-      视图
+   ### View
 
-      视图层的灵感来自Laravel的Blade模板
+```php
+ return View('welcome',['data'=>'Lov-Views']);
+```
 
+模板试图中采用{{$data}} 渲染  
 
-      你可以这样在控制器通过View传送数据到模板
+### Model
 
-      return View('welcome',['data'=>'Lov-Views']);
+模型 
 
+模型层采用Laravel的Eloquent模型,你可以参照Laravel的Eloquent模型取的数据库的数据
 
+```
+$data=User::where([status,1)->orderBy('name', 'desc')->get();
+```
 
-      blade模板引擎也与Laravel一样,你可以这样取得数据
-
-
-      {{ $data }}
-
-
-      路由
-
-      路由也支持闭包模式和控制器行为
-
-
-      Route::get('/',function()
-      {
-         return View('welcome');
-      });
-
-
-      Route::get('/test','index@index');
-
-
-
-[By Lov3](http://www.lov3ling.com)  
 
 
 
